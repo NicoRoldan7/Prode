@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    background: url(./imagenes/fondo2.webp);
+    background-size: 1950px 1000px;
+  }
+  
+  nav{
+    background:url(./imagenes/fondoMenu.png) no-repeat;
+    background-position: center;
+    background-position: 70% 100%;
+    background-size: 300px 60px;
+  }
+  
+  nav ul{
+    align-items: center;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 30px;
+    margin-left: 40px;
+  }
+  
+  .submenu{
+    background-color: rgba(201, 185, 185, 0.9);
+    color: white;
+    
+  }
+  
+  nav ul li a{
+    color: black;
+    font: bold;
+    padding: 0 1px;
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  nav ul li a:hover{
+      color: white;
+  }
+  
+  nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  
+  nav ul ul{
+    position: absolute;
+    top: 50px;
+    border-top: 3px brown solid;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  nav ul ul li{
+    width: 120px;
+    display: list-item;
+    border: 3px rgb(0, 0, 0) solid;
+  }
+  
+  table{
+    background-color: rgba(255, 0, 0, .1);
+    border-spacing: 0;
+    border-collapse:collapse;
+    margin-left: 1100px;
+    margin-top: 90px;
+    padding: 5px;
+  }
+  
+  .grupo1{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  
+  .grupo2{
+    display: inline-block;
+    margin-top: 340px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  
+  caption{
+    padding: 5px;
+    height: 20px;
+    width: 400px;
+    border: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+  }
+  
+.pun{
+  padding: 10px 10px;
+}
+
+  td,
+  tr{
+    border: none;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .res{
+    color:rgb(255, 255, 255);
+    font: bold;
+  }
