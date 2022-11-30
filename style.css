@@ -9,33 +9,38 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 550;
-  color: black;
   background: url(./imagenes/fondo.webp) no-repeat;
-  background-size: 1950px 1000px;
+  background-size: 2000px 1000px;
+}
+
+.grupos{
+  margin-top: 3px;
+}
+.container-grupo1{
+  display: inline-flex;
+}
+
+.container-grupo2{
+  display: inline-flex;
+  margin-top: 300px;
 }
 
 nav{
   background:url(./imagenes/fondoMenu.png) no-repeat;
   background-position: center;
   background-position: 70% 100%;
-  background-size: 300px 60px;
-}
-
-nav ul{
-  align-items: center;
+  background-size: 200px 60px;
 }
 
 nav ul li{
   display: inline-block;
   margin: 10px;
-  margin-right: 30px;
   margin-left: 40px;
 }
 
 .submenu{
   background-color: rgba(201, 185, 185, 0.9);
   color: white;
-  
 }
 
 nav ul li a{
@@ -45,26 +50,26 @@ nav ul li a{
   display: block;
   line-height: 50px;
   font-size: 20px;
-  transition: 0.4s;
+  transition: 0s;
 }
 
 nav ul li a:hover{
-    color: white;
+    color: rgb(238, 58, 58);
 }
 
 nav ul li:hover > ul{
   top: 50px;
   opacity: 1;
-  visibility: visible;
-  transition: .3s linear;
+  visibility:visible;
+  transition: .2s linear;
 }
 
 nav ul ul{
   position: absolute;
-  top: 50px;
+  top: 10px;
   border-top: 3px brown solid;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility:hidden;
 }
 
 nav ul ul li{
@@ -77,22 +82,8 @@ table{
   background-color: rgba(255, 0, 0, .1);
   border-spacing: 0;
   border-collapse:collapse;
-  margin: 9px;
+  margin: 29px;
   padding: 5px;
-}
-
-.grupo1{
-  display: inline-block;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-left: 20px;
-}
-
-.grupo2{
-  display: inline-block;
-  margin-top: 340px;
-  margin-right: 30px;
-  margin-left: 20px;
 }
 
 caption{
@@ -116,3 +107,38 @@ tr{
   color:black;
   font: bold;
 }
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+  body{
+    font-size: 15px;
+    background: rgb(56, 20, 200);
+  }
+  nav{
+    background-image: none;
+  }
+  .menu{
+    margin-left: 35px;
+  }
+  .activar{
+    margin-left: 55px;
+  }
+  .sub-np{
+    margin-top: 70px;
+    margin-left: 45px;
+  }
+  .sub-nr{
+    margin-top: 140px;
+    margin-left: 45px;
+  }
+  .container-grupo1, .container-grupo2{
+    display: inline;
+  }
+  table{
+    margin-top: 1px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+  }
+}
+     
+     
+     
