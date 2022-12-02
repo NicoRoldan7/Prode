@@ -198,6 +198,9 @@
     margin-top: 140px;
     margin-left: 45px;
   }
+  .estadisticas{
+    margin-left: 100px;
+  }
   .container-grupo1, .container-grupo2{
     display: inline;
   }
